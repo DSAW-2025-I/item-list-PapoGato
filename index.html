@@ -1,74 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Product list with cart</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="scripts.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Desserts
+<body class="p-8" style="background-color: #fff5e782;">
+  <h1 class="text-4xl font-bold mb-1 ml-6">Desserts</h1>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-6 rounded-lg">
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-waffle-desktop.jpg" alt="waffles-berries">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-creme-brulee-desktop.jpg" alt="vanilla-bean-cream">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-macaron-desktop.jpg" alt="macaron-mix">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-tiramisu-desktop.jpg" alt="classic-tiramisu">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-baklava-desktop.jpg" alt="pistacho-baklava">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg" src="./assets/image-meringue-desktop.jpg" alt="lemon-meringue-pie">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg"
+          src="https://www.allrecipes.com/thmb/gDJ1S6ETLfWGyyWw_4A_IGhvDYE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9295_red-velvet-cake_ddmfs_4x3_1129-a8ab17b825e3464a9a53ceeda54ff461.jpg"
+          alt="red-velvet-cake">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg"
+          src="https://hips.hearstapps.com/hmg-prod/images/190131-salted-caramel-brownies-346-1549668272.jpg?crop=0.8883333333333333xw:1xh;center,top&resize=1200:*"
+          alt="salted-caramel-brownie">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="rounded-lg h-40"
+          src="https://www.recipesfromitaly.com/wp-content/uploads/2019/09/panna-cotta-recipe-1x1-1200x1200-1-480x270.jpg"
+          alt="panna-cota">
+        <button
+          class="-mt-2 bg-white text-black px-4 py-2 rounded-full border border-gray-300 shadow-md hover:bg-gray-100 transition">Add
+          to Cart</button>
+      </div>
+    </div>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="bg-white p-6 rounded-lg">
+      <h1 class="text-orange-600" style="font-size: xx-large;">
+        Your cart ()
+      </h1>
+      <div class="flex flex-col justify-center items-center text-stone-500 mt-45">
+        <img src="assets/illustration-empty-cart.svg" alt="empty-img">
+        Your added items will appear here
+      </div>
+    </div>
+    <div class="mt-4 text-lg font-bold">Total: $<span id="total-price">0.00</span></div>
+    <button id="confirm-order"
+      class="mt-4 w-full bg-orange-500 text-white py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition">Confirm
+      Order</button>
+  </div>
+  </div>
   </div>
 </body>
+
 </html>
