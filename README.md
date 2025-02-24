@@ -108,3 +108,7 @@ Para llevar a cabo este desafío de manera eficiente, sigue estas recomendacione
 
 
 **¡Diviértete construyendo!** 🚀
+
+
+https://dsaw-2025-i.github.io/item-list-PapoGato/
+Parcial 1 Samuel Guerrero Arcos
